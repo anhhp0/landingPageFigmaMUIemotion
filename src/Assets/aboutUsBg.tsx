@@ -9,6 +9,7 @@ const AboutUsBg: React.FC = () => {
         zIndex: -10,
         right: 0,
         display: "inline-flex",
+        mt:"555px"
       }}
     >
       <svg

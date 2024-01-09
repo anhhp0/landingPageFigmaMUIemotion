@@ -10,7 +10,7 @@ const ServicesDetail: React.FC = () => {
       <Grid
         container
         // spacing={0}
-        direction={{xs: "column", md: "column", lg: "row" }}
+        direction={{xs: "column", md: "row", lg: "row" }}
         justifyContent="center"
       >
         <Grid item xs={4}>

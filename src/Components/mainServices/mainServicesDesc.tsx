@@ -35,7 +35,7 @@ const MainServicesDesc: React.FC = () => {
   });
 
   return (
-    <Box sx={{ px: 4, display: "flex", pl:8 }} py={4} justifyContent={"center"}>
+    <Box sx={{ px: 1, display: "flex", pl:8 }} py={4} justifyContent={"center"}>
       <Stack
         direction={"column"}
         gap={4}

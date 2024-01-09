@@ -36,10 +36,10 @@ const Slider: React.FC = () => {
   });
   return (
     <Box>
-      <Grid container spacing={2} direction={{ xs:"column", md: "column", lg: "row" }}>
+      <Grid container spacing={2} direction={{ xs:"column", md: "row", lg: "row" }}>
         <Grid item xs={6}>
           {/* desc  */}
-          <Box sx={{ pl: 8, pt: 4 }}>
+          <Box sx={{ pl: 4, pt: 4 }}>
             <Grid direction={"column"}>
               {/* Clinic &amp; beauty consultant */}
               <Grid item>

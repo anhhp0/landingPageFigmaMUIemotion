@@ -13,7 +13,7 @@ import AboutUsBg from "../Assets/aboutUsBg";
 
 const Home = () => {
   return (
-    <Box maxWidth="1440">
+    <Box sx={{}} maxWidth="1440" minWidth="640px">
       <Container>
         {/* Background  */}
         <NavBarSliderBg />
@@ -39,6 +39,7 @@ const Home = () => {
       </Container>
 
       <Container>
+        <AboutUsBg />
         <Box mt={16}>
           <Grid
             container
@@ -63,7 +64,6 @@ const Home = () => {
             </Grid>
           </Grid>
         </Box>
-        <AboutUsBg/>
       </Container>
 
       {/* ProfesionalTeam  */}
