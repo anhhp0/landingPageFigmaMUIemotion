@@ -13,7 +13,7 @@ import AboutUsBg from "../Assets/aboutUsBg";
 
 const Home = () => {
   return (
-    <Box sx={{}} maxWidth="1440">
+    <Box maxWidth="1440">
       <Container>
         {/* Background  */}
         <NavBarSliderBg />
