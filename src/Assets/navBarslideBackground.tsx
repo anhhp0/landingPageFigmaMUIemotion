@@ -4,7 +4,7 @@ import React from "react";
 
 const NavBarSliderBg: React.FC = () => {
   return (
-    <Box sx={{ position: "absolute", zIndex: -10, top: 0, left: 0, display: "flex"}}>
+    <Box sx={{ position: "absolute", zIndex: -10, display: "inline-flex"}}>
       <svg
         width="1267"
         height="743"
