@@ -9,6 +9,7 @@ import Footer from "./footer/Footer";
 import NavBarSliderBg from "../Assets/navBarslideBackground";
 import { Box, Container, Grid } from "@mui/material";
 import ServicesDetail from "./mainServices/servicesDetail";
+import AboutUsBg from "../Assets/aboutUsBg";
 
 const Home = () => {
   return (
@@ -38,9 +39,6 @@ const Home = () => {
       </Container>
 
       <Container>
-        {/* Background MainService + AboutUs  */}
-        <></>
-
         <Box mt={16}>
           <Grid
             container
@@ -65,6 +63,7 @@ const Home = () => {
             </Grid>
           </Grid>
         </Box>
+        <AboutUsBg/>
       </Container>
 
       {/* ProfesionalTeam  */}

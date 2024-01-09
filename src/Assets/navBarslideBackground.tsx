@@ -4,9 +4,9 @@ import React from "react";
 
 const NavBarSliderBg: React.FC = () => {
   return (
-    <Box sx={{ position: "absolute", zIndex: -10, top: 0, left: 0, right: 0, display: "inline-flex"}}>
+    <Box sx={{ position: "absolute", zIndex: -10, top: 0, left: 0, display: "inline-flex"}}>
       <svg
-        width="1440"
+        width="1267"
         height="100%"
         viewBox="0 0 1267 743"
         fill="none"
