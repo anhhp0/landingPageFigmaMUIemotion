@@ -36,7 +36,7 @@ const Slider: React.FC = () => {
   });
   return (
     <Box>
-      <Grid container spacing={2} direction={{ xs:"column", md: "row", lg: "row" }}>
+      <Grid container spacing={2} direction={{ xs:"column", md: "column", lg: "row" }}>
         <Grid item xs={6}>
           {/* desc  */}
           <Box sx={{ pl: 4, pt: 4 }}>

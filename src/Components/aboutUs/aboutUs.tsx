@@ -59,7 +59,7 @@ const AboutUs: React.FC = () => {
       <Stack
         spacing={2}
         gap={8}
-        direction={{ xs: "column", md: "row", lg: "row" }}
+        direction={{ xs: "column", md: "column", lg: "row" }}
       >
         <Grid item xs="auto">
           <Grid container direction="column" spacing={8}>

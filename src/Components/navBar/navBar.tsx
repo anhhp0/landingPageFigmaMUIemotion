@@ -32,7 +32,7 @@ export default function Navbar() {
   return (
     <Box sx={{ px: 0, display: "flex" }} py={4}>
       {/* <image src={mainLogo}></image> */}
-      <Grid container spacing={2} direction={{xs: "column", md: "row", lg: "row" }}>
+      <Grid container direction={{xs: "column", md: "column", lg: "row" }}>
         <Grid item xs={4} pl={4} pt={1} order={1}>
           {/* logo  */}
           <MainLogo />

@@ -48,14 +48,14 @@ const MainServicesDesc: React.FC = () => {
           container
           spacing={2}
           direction={"column"}
-          justifyContent="center"
+          // justifyContent="center"
         >
           {/* Main services Desc  */}
           <Grid
             container
             spacing={2}
             direction={"column"}
-            justifyContent="center"
+            // justifyContent="center"
           >
             <Grid item>
               <MainServices justifyContent="center" align="center">
