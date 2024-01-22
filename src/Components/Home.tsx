@@ -3,13 +3,15 @@ import Navbar from "./navBar/navBar";
 import Slider from "./slider/slider";
 import MainServices from "./mainServices/mainServicesDesc";
 import AboutUs from "./aboutUs/aboutUs";
-import ProfesionalTeam from "./profesionalTeam/profesionalTeam";
+import ProfesionalTeam from "./professionalTeam/professionalTeam";
 import ContactUs from "./contactUs/contactUs";
 import Footer from "./footer/Footer";
 import NavBarSliderBg from "../Assets/navBarslideBackground";
 import { Box, Container, Grid } from "@mui/material";
 import ServicesDetail from "./mainServices/servicesDetail";
 import AboutUsBg from "../Assets/aboutUsBg";
+import ProfessionalDetail from "./professionalTeam/professionalDetail";
+import ContactUsBg from "../Assets/contactUsBg";
 
 const Home = () => {
   return (
@@ -40,7 +42,7 @@ const Home = () => {
 
       <Container>
         <AboutUsBg />
-        <Box mt={16}>
+        <Box mt={8}>
           <Grid
             container
             spacing={2}
@@ -66,10 +68,35 @@ const Home = () => {
         </Box>
       </Container>
 
-      {/* ProfesionalTeam  */}
-      <ProfesionalTeam />
-      {/* ContactUs  */}
-      <ContactUs />
+      <Container>
+        {/* Background  */}
+        <ContactUsBg/>
+        <Box mt={8}>
+          <Grid
+            container
+            spacing={2}
+            direction={"column"}
+            justifyContent="center"
+          >
+            <Grid item>
+              {/* ProfesionalTeam  */}
+              <Grid>
+                <Grid item>
+                  <ProfesionalTeam />
+                </Grid>
+                <Grid item>
+                  <ProfessionalDetail />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              {/* ContactUs  */}
+              <ContactUs />
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+
       {/* //// */}
       {/* Footer  */}
       <Footer />
