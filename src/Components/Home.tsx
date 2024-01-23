@@ -12,6 +12,7 @@ import ServicesDetail from "./mainServices/servicesDetail";
 import AboutUsBg from "../Assets/aboutUsBg";
 import ProfessionalDetail from "./professionalTeam/professionalDetail";
 import ContactUsBg from "../Assets/contactUsBg";
+import CompliedBg from "./footer/CompliedBg";
 
 const Home = () => {
   return (
@@ -70,8 +71,8 @@ const Home = () => {
 
       <Container>
         {/* Background  */}
-        <ContactUsBg/>
-        <Box mt={8}>
+        <ContactUsBg />
+        <Box mt={8} paddingBottom={18}>
           <Grid
             container
             spacing={2}
@@ -99,7 +100,10 @@ const Home = () => {
 
       {/* //// */}
       {/* Footer  */}
-      <Footer />
+      <Container>
+        <CompliedBg/>
+        <Footer />
+      </Container>
     </Box>
   );
 };
