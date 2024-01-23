@@ -1,7 +1,10 @@
+import { Box } from "@mui/material";
 import React from "react";
 
 const Footer: React.FC = () => {
-  return <div>Footer</div>;
+  return <Box>
+    {/* Background  */}
+  </Box>
 };
 
 export default Footer;
