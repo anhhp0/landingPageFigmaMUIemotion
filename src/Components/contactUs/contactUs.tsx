@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Typography, Button, Box, Stack, Grid, Input, TextareaAutosize } from "@mui/material";
+import { Typography, Button, Box, Stack, Grid, Input, TextField, OutlinedInput } from "@mui/material";
 import React from "react";
 import AnimationContactUS from "../../Assets/animationContactUs";
 
@@ -43,15 +43,30 @@ const ContactUs: React.FC = () => {
     width: "200px",
     height: "58.36px",
   });
-  const Textarea = styled(TextareaAutosize)({
+  const TextField1 = styled(TextField)({
     resize: "none",
     border: "1px solid",
     width: "520px",
     height: "239.47px",
     borderRadius: "15px",
     borderColor: "#D9DDFE",
-    padding: "8px 12px",
   });
+    const Input1 = styled(OutlinedInput)({
+      resize: "none",
+      border: "1px solid",
+      width: "242.21px",
+      height: "61.58px",
+      borderRadius: "15px",
+      borderColor: "#D9DDFE",
+    });
+      const Input2 = styled(OutlinedInput)({
+        resize: "none",
+        border: "1px solid",
+        width: "520px",
+        height: "61.58px",
+        borderRadius: "15px",
+        borderColor: "#D9DDFE",
+      });
 
   return (
     <Box
@@ -70,7 +85,7 @@ const ContactUs: React.FC = () => {
           </Box>
         </Grid>
         <Grid item xs="auto">
-          <Grid container direction="column" spacing={8}>
+          <Grid container direction="column" spacing={2}>
             <Grid item>
               <Grid container direction="column">
                 <Grid item>
@@ -91,39 +106,74 @@ const ContactUs: React.FC = () => {
             </Grid>
 
             <Grid item>
-              <Grid direction="column" spacing={16}>
+              <Grid direction="column" container spacing={2}>
                 <Grid item>
-                  <Grid direction="row" spacing={16}>
-                    <Input
-                      type="text"
-                      name="firstName"
-                      placeholder="FirstName"
-                    />
-                    <Input type="text" name="lastName" placeholder="LastName" />
+                  <Grid
+                    direction="row"
+                    spacing={0}
+                    justifyContent="space-between"
+                  >
+                    <Grid container direction="row" spacing={4}>
+                      <Grid item>
+                        <Input1
+                          sx={{
+                            "& fieldset": { border: "none" },
+                          }}
+                          type="text"
+                          name="firstName"
+                          placeholder="First Name"
+                        />
+                      </Grid>
+                      <Grid item>
+                        <Input1
+                          sx={{
+                            "& fieldset": { border: "none" },
+                          }}
+                          type="text"
+                          name="lastName"
+                          placeholder="Last Name"
+                          multiline
+                        />
+                      </Grid>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item>
-                <Input type="text" name="email" placeholder="Email address" />
+              <Grid item pt={1}>
+                <Input2
+                  sx={{
+                    "& fieldset": { border: "none" },
+                  }}
+                  type="text"
+                  name="email"
+                  placeholder="Email address"
+                />
               </Grid>
-              <Grid item>
-                <Input
+              <Grid item pt={1}>
+                <Input2
+                  sx={{
+                    "& fieldset": { border: "none" },
+                  }}
                   type="text"
                   name="subject"
                   placeholder="Subject message"
                 />
               </Grid>
 
-              <Grid item>
-                <Textarea
-                  aria-label="maximum height"
+              <Grid item pt={1}>
+                <TextField1
+                  sx={{
+                    "& fieldset": { border: "none" },
+                  }}
+                  multiline
+                  rows={9}
                   placeholder="Your inquiry here"
                 />
               </Grid>
             </Grid>
           </Grid>
 
-          <Grid item>
+          <Grid item pt={1}>
             {/* Button  */}
             <Stack direction="row" spacing={2}>
               <SendMessageButton variant="contained">
